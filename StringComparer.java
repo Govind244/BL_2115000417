@@ -1,14 +1,16 @@
-import java.util.*;
-public class Question8 {
+import java.util.Scanner;
+
+public class StringComparer {
+
     public static String compareStrings(String str1, String str2) {
         if (str1 == null && str2 == null) {
-            return "Strings are equal."; 
+            return "Strings are equal.";
         }
         if (str1 == null) {
-            return "String 1 is null."; 
+            return "String 1 is null.";
         }
         if (str2 == null) {
-            return "String 2 is null."; 
+            return "String 2 is null.";
         }
 
         int i = 0;
@@ -20,7 +22,7 @@ public class Question8 {
             }
             i++;
         }
-		
+
         if (str1.length() < str2.length()) {
             return "\"" + str1 + "\" comes before \"" + str2 + "\" in lexicographical order.";
         } else if (str1.length() > str2.length()) {

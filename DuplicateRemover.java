@@ -1,21 +1,29 @@
-import java.util.*;
+import java.util.Scanner;
 
-public class Question4 {
+public class DuplicateRemover {
+
     public static String removeDuplicates(String str) {
-        if (str == null || str.isEmpty()) {
+        if (str == null || str.length() == 0) {
             return str;
         }
 
-        Set<Character> uniqueChars = new LinkedHashSet<>(); 
-        StringBuilder sb = new StringBuilder();
-
+        String result = "";
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
-            if (uniqueChars.add(c)) { 
-                sb.append(c);
+            if (!isPresent(result, c)) {
+                result += c;
             }
         }
-        return sb.toString();
+        return result;
+    }
+
+    public static boolean isPresent(String str, char c) {
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == c) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public static void main(String[] args) {

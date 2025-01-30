@@ -1,10 +1,10 @@
 import java.util.*;
-public class Question2 {
+public class TextAnalyzer {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
-		
+        
         countVowelsAndConsonants(input);
         System.out.println("Reversed string: " + reverseString(input));
     }
@@ -13,9 +13,10 @@ public class Question2 {
         int vowelCount = 0, consonantCount = 0;
         str = str.toLowerCase();
         
-        for (char ch : str.toCharArray()) {
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
             if (Character.isLetter(ch)) {
-                if ("aeiou".indexOf(ch) != -1) {
+                if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
                     vowelCount++;
                 } else {
                     consonantCount++;
@@ -26,11 +27,20 @@ public class Question2 {
         System.out.println("Number of consonants: " + consonantCount);
     }
 
+
     public static String reverseString(String str) {
-        StringBuilder reversed = new StringBuilder();
-        for (int i = str.length() - 1; i >= 0; i--) {
-            reversed.append(str.charAt(i));
+        char[] characters = str.toCharArray();
+        int left = 0;
+        int right = characters.length - 1;
+        
+        while (left < right) {
+            char temp = characters[left];
+            characters[left] = characters[right];
+            characters[right] = temp;
+            left++;
+            right--;
         }
-        return reversed.toString();
+        
+        return new String(characters);
     }
 }

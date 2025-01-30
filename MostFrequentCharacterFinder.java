@@ -1,30 +1,32 @@
-import java.util.*;
-public class Question9 {
+import java.util.Scanner;
+
+public class MostFrequentCharacterFinder {
+
     public static char findMostFrequentCharacter(String str) {
-        if (str == null || str.isEmpty()) {
+        if (str == null || str.length() == 0) {
             throw new IllegalArgumentException("Input string cannot be null or empty.");
         }
-        Map<Character, Integer> charFrequencies = new HashMap<>();
 
+        int[] frequencies = new int[256];
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
-            charFrequencies.put(c, charFrequencies.getOrDefault(c, 0) + 1);
+            frequencies[c]++;
         }
 
-        char mostFrequent = '\0'; 
+        char mostFrequent = '\0';
         int maxFrequency = 0;
 
-        for (Map.Entry<Character, Integer> entry: charFrequencies.entrySet()) {
-            if (entry.getValue() > maxFrequency) {
-                mostFrequent = entry.getKey();
-                maxFrequency = entry.getValue();
+        for (int i = 0; i < 256; i++) {
+            if (frequencies[i] > maxFrequency) {
+                mostFrequent = (char) i;
+                maxFrequency = frequencies[i];
             }
         }
 
         return mostFrequent;
     }
 
-    public static void main(String args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a string: ");
         String inputString = scanner.nextLine();
@@ -35,5 +37,6 @@ public class Question9 {
         } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
         }
+        scanner.close();
     }
 }

@@ -1,17 +1,27 @@
-import java.util.*;
-public class Question6 {
+import java.util.Scanner;
+
+public class SubstringCounter {
 
     public static int countSubstringOccurrences(String text, String substring) {
-        if (text == null || substring == null || substring.isEmpty()) {
-            return 0; 
+        if (text == null || substring == null || substring.length() == 0) {
+            return 0;
         }
 
         int count = 0;
-        int index = 0;
+        int textLength = text.length();
+        int subLength = substring.length();
 
-        while ((index = text.indexOf(substring, index)) != -1) {
-            count++;
-            index += substring.length(); 
+        for (int i = 0; i <= textLength - subLength; i++) {
+            boolean match = true;
+            for (int j = 0; j < subLength; j++) {
+                if (text.charAt(i + j) != substring.charAt(j)) {
+                    match = false;
+                    break;
+                }
+            }
+            if (match) {
+                count++;
+            }
         }
 
         return count;
@@ -29,6 +39,6 @@ public class Question6 {
         int occurrences = countSubstringOccurrences(text, substring);
 
         System.out.println("The substring \"" + substring + "\" occurs " + occurrences + " times in the text.");
-
+        scanner.close();
     }
 }
