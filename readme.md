@@ -60,3 +60,9 @@ Concepts Covered:
     static Keyword - Associating Variables & Methods with Class  
     final Keyword - Making Variables Immutable  
     instanceof Operator - Checking Object’s Class Type  
+
+
+Assignment 10 - 06-02-2025
+Concepts Covered: 
+    Class, Object and Sequenece Diagram
+    Object modeling: Object relationships and Communication
