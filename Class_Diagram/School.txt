@@ -1,0 +1,18 @@
++----------------+       1       *             +----------------+
+|    Student     |--------<has>-------->|     Subject    |
++----------------+                              +----------------+
+| - studentID    |                             | - subjectCode  |
+| - name         |                              | - subjectName  |
++----------------+                              | - score        |
+| + getSubjects()|                           +----------------+
+| + calculateGrade()|                     | + getScore()   |
++----------------+                              +----------------+
+        |
+        |  uses
+        v
++----------------+
+| GradeCalculator|
++----------------+
+| + calculateOverallGrade(List<Subject>)|
++----------------+
+

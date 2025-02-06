@@ -1,0 +1,14 @@
+Student            GradeCalculator
+   |   requestGrade()     |
+   |--------------------->|
+   |                      |   getSubjectsAndMarks()
+   |                      |------------------------>|
+   |                      |                         |  [Retrieves subjects and marks]
+   |                      |<------------------------|
+   |                      |   calculateGrade()
+   |                      |------------------------>|
+   |                      |                         |  [Computes overall grade]
+   |                      |<------------------------|
+   |   returnGrade()      |
+   |<---------------------|
+
