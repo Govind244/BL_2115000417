@@ -71,3 +71,7 @@ Concepts Covered:
 Assignment 11 - 07-02-2025
 Concepts Covered:
     Inheritance - Single, Multilevel, Hierarchical, Hybrid 
+
+Assignment 12 - 10-02-2025
+Concepts Covered:
+    Encapsulation, Polymorphism, Interface and Abstract Class
