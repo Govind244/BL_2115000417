@@ -97,3 +97,12 @@ Assignment 17 - 17-02-2025
 Concepts Covered:
     Algorithm's Runtime Analysis & Big-O Notation
     
+
+Assignment 18 - 18-02-2025
+Concepts Covered:
+    Java Generics - Introduction to Generics
+                    Type Parameters
+                    Generic Classes
+                    Generic Methods
+                    Bounded Type Parameters
+                    Wildcards
