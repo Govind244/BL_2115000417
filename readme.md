@@ -106,3 +106,17 @@ Concepts Covered:
                     Generic Methods
                     Bounded Type Parameters
                     Wildcards
+
+
+Assignment 19 - 20-02-2025
+Concepts Covered:
+    Overview of Collections Framework
+    What is the Collections Framework?
+    Hierarchy of Collections Framework
+    List Interface and Implementing Classes
+    Set Interface and Implementing Classes
+    Queue and Deque Interfaces
+    Map Interface and Its Implementations
+    Comparison of Different Implementations
+    Real-World Use Cases and Best Practices.
+
