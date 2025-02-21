@@ -131,7 +131,6 @@ Concepts Covered:   Java I/O Streams
                     5. Reader and Writer
                     Key Considerations
                     Best Practices
-
                     Exceptions 
                     Types of Exceptions
                     Checked Exceptions,
