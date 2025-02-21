@@ -131,7 +131,7 @@ Concepts Covered:   Java I/O Streams
                     5. Reader and Writer
                     Key Considerations
                     Best Practices
-                    Exceptions 
+                    ----Exceptions -----
                     Types of Exceptions
                     Checked Exceptions,
                     Unchecked Exceptions
@@ -142,7 +142,6 @@ Concepts Covered:   Java I/O Streams
                     try-with-resources statement
                     throws clause
                     throw statement
-
                     Creating Custom Exceptions
                     Extending Exception Class
                     Defining Constructors
