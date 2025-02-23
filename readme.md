@@ -145,3 +145,26 @@ Concepts Covered:   Java I/O Streams
                     Creating Custom Exceptions
                     Extending Exception Class
                     Defining Constructors
+
+
+Assignment 21 - 22-02-2025
+Concepts Covered:
+                    Regex 
+                    MetaCharacter
+                    Quantifier
+
+                    Common Patterns:
+                    Email Validation
+                    Password Strength
+                    Phone Number Format 
+                    Java Regex API 
+                    Pattern
+                    Matcher
+                    Methods:
+                    find()
+                    matches()
+                    replaceAll()
+                    Introduction to JUnit Framework
+                    JUnit Annotations
+                    Writing Test Cases
+                    Structure of a Test Class
