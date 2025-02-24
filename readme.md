@@ -152,7 +152,6 @@ Concepts Covered:
                     Regex 
                     MetaCharacter
                     Quantifier
-
                     Common Patterns:
                     Email Validation
                     Password Strength
