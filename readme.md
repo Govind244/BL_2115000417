@@ -185,3 +185,11 @@ Concepts Covered:
             Writing CSV Files
             Parsing CSV Data
             Data Validation
+
+Assignment 24 - 26-02-2025
+Concepts Covered:
+                Introduction to JSON
+                Reading JSON Data
+                Writing JSON Data
+                Parsing JSON Data
+                JSON Schema Validation
